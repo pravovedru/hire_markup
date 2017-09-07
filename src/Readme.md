@@ -7,7 +7,7 @@
 </ul>
 
 
-<a href="https://hh.ru/resume/5ea0d714ff02aad8ca0039ed1f5843374d4d6e">моё резюме на hh</a>
+<a href="https://hh.ru/resume/5ea0d714ff02aad8ca0039ed1f5843374d4d6e">моё резюме на hh</a><br>
 <a href="https://milev.pro/">мой сайт-визитка</a>
 
 
