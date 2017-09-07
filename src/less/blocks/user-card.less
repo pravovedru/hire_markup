@@ -4,7 +4,7 @@
 
   &__main-col {
     float: left;
-    width: 70%;
+    width: 71%;
     padding: 25px;
     @media only screen and (max-width: 768px) {
       width: 60%;
@@ -18,7 +18,7 @@
   &__rating-col {
     position: relative;
     float: left;
-    width: 30%;
+    width: 29%;
     padding: 25px 45px;
     @media only screen and (max-width: 768px) {
       width: 40%;
@@ -63,6 +63,7 @@
     &__cv {
       height: 75px;
       padding-right: 65px;
+      margin-bottom: 10px;
       line-height: 1.65;
       overflow: hidden;
 
@@ -72,14 +73,14 @@
     }
 
     &__username {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       font-size: 24px;
-      line-height: 1;
+      line-height: 0.85;
       color: @blue;
     }
 
     &__info {
-      font-size: 12px;
+      font-size: @small;
 
       .pm-link {
         margin-left: 15px;
@@ -116,7 +117,7 @@
 
     &-popover {
       position: absolute;
-      top: ~"calc(100% + 10px)";
+      top: ~"calc(100% + 6px)";
       left: 50%;
       right: auto;
       bottom: auto;
@@ -167,8 +168,10 @@
     &__rate {
       display: inline-block;
       vertical-align: top;
+      margin-left: -1px;
 
       &-stars {
+        margin-left: -2px;
         .rateit {
           &-empty {
             color: @gray-light;
@@ -181,7 +184,7 @@
     }
 
     &__footer {
-      margin-top: 60px;
+      margin-top: 57px;
       text-align: center;
       @media only screen and (max-width: 736px) {
         margin: 0;
@@ -193,13 +196,15 @@
         width: 100%;
         margin-top: 25px;
       }
+
+      .rating-numbers__info {
+        font-size: 12.8px;
+      }
     }
 
     &__info {
       margin-top: 15px;
-      font-size: 12px;
+      font-size: @small;
     }
   }
-
-
 }
