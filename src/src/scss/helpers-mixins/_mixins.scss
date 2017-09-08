@@ -1,0 +1,22 @@
+@mixin flex() {
+  display: flex;
+  align-items: flex-start;
+}
+
+@mixin flex-vertical() {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
