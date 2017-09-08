@@ -1,0 +1,189 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "_mixins/line-gradient"
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	margin: 0
+	padding: 0
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+a
+	text-decoration: none
+
+p
+	padding: 0
+	margin: 0
+
+.container
+	width: 960px
+	margin: auto
+
+.lawyer-item
+	margin-top: 300px
+	background-color: #fff
+
+.lawyer-content
+	display: flex
+	position: relative
+	padding: 25px
+	font-size: 13px
+	a
+		color: $blue
+		font-size: 13px
+		&:hover
+			color: $green
+	.info
+		display: flex
+		height: 165px
+		.photo
+			display: block
+			margin-right: 25px
+		.about
+			width: 400px
+			padding-right: 90px
+			border-right: 1px solid #eaeaea
+			&-name
+				display: inline-block
+				font-size: 24px
+				line-height: 24px
+				margin-bottom: 8px
+			&-profession
+				color: $gray
+			&-city
+				margin-right: 20px
+			&-text
+				font-size: 14px
+				margin-top: 10px
+				margin-bottom: 11px
+			&-spec
+				margin-right: 15px
+			&-expr
+				color: $gray
+	.stat
+		width: 220px
+		height: 165px
+		padding-left: 33px
+		.no-stat
+			display: flex
+			span
+				font-size: 13px
+				line-height: 16px
+				color: #888
+				margin-left: 18px
+		.wrap-rate
+			.count
+				display: inline-block
+				font-size: 36px
+				line-height: 36px
+				color: $green
+				font-weight: bold
+				margin-right: 10px
+			.rating
+				display: inline-block
+				&-dot
+					span
+						display: inline-block
+						width: 7px
+						height: 7px
+						border-radius: 50%
+						background-color: #e3e3e3
+					.full-dot
+						background-color: $orange
+					.half-dot
+							+linear-gradient-b(90deg, $orange 50%, transparent 50%)
+				&-title
+					line-height: 13px
+			&:hover .hint-rating
+				display: block
+		.btn
+			display: block
+			width: 180px
+			font-size: 14px
+			text-align: center
+			color: #fff
+			padding: 6px 0
+			margin: 57px 23px 12px auto
+			border: 1px solid #7fb04b
+			border-radius: 3px
+			+linear-gradient-b(to bottom,#97c765 0%,#7eaf4a 100%)
+			&:hover
+				+linear-gradient-b(to bottom,#a6d277 0%,#97c765 100%)
+
+		.feedback
+			color: $gray
+			text-align: center
+			margin-right: 6px
+
+	.hint-rating
+		position: absolute
+		top: 69px
+		right: 107px
+		width: 225px
+		background-color: #fff
+		border: 1px solid #cddec6
+		border-radius: 3px
+		box-sizing: border-box
+		color: #333
+		display: none
+		.arrow
+			display: block
+			position: absolute
+			top: -5px
+			left: 105px
+			width: 8px
+			height: 8px
+			background-color: #f4f8ef
+			border-bottom:  1px solid #cddec6
+			border-right:  1px solid #cddec6
+			transform: rotate(-135deg)
+		.hint-head
+			font-size: 14px
+			padding: 7px 14px
+			background-color: #f4f8ef
+			.rating-count
+				display: inline-block
+				span
+					color: $green
+					font-weight: bold
+			.rating-position
+				display: inline-block
+				color: $green
+				margin-left: 19px
+		.hint-body
+			background-color: #fff
+			font-size: 13px
+			line-height: 16px
+			text-align: left
+			padding: 13px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
