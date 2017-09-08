@@ -9,6 +9,7 @@
 .left {float: left;}
 .right {float: right;}
 a {
+  cursor: pointer;
   &:hover {
     text-decoration: none;
   }
@@ -17,6 +18,14 @@ a {
 body {
   font-family: Arial, sans-serif;
 }
+
+.tooltip-style {
+  content:"";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
 // ---------------------------------------------------------------------------------------------------------------------
 .container {
   background-color: #f6f6f6;
@@ -26,7 +35,7 @@ body {
       color: #2a599a;
       @include transition(.3s);
       &:hover {
-        color: #4271c7;
+        color: #90b866;
         @include transition(.2s);
       }
     }
@@ -67,6 +76,7 @@ body {
   }
   #rating-container {
     padding-left: 30px;
+    position: relative;
     h1 {
       color: #90b866;
       font-size: 32px;
@@ -86,8 +96,19 @@ body {
       padding: 15px 20px;
       margin-top: 60px;
       margin-left: 20px;
+      @include transition(.3s);
+      &:hover {
+        background: -webkit-linear-gradient(#80b14c, #94c461);
+        background: -o-linear-gradient(#80b14c, #94c461);
+        background: -moz-linear-gradient(#80b14c, #94c461);
+        background: linear-gradient(#80b14c, #94c461);
+        @include transition(.2s);
+      }
       a {
         color: #ffffff;
+        &:hover {
+          color: #ffffff;
+        }
       }
     }
     .reviews {
@@ -98,6 +119,64 @@ body {
       .small-text {
         display: inline-block;
       }
+    }
+  }
+  .rating-header-2 {
+    display: none;
+    img {
+      padding-right: 10px;
+      float: left;
+    }
+    p {
+      font-size: 13px;
+      color: #888888;
+      padding-top: 5px;
+    }
+  }
+  #tooltip {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    right: 40%;
+    top: 45px;
+    width: 220px;
+    height: 130px;
+    @include border-radius(5px);
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+    &:before {
+      @extend .tooltip-style;
+      left: 97px;
+      top: -19px;
+      border: 9px solid;
+      border-color: transparent transparent #d6d6d6 transparent;
+    }
+    &:after {
+      @extend .tooltip-style;
+      left: 98px;
+      top: -16px;
+      border: 8px solid;
+      border-color: transparent transparent #f4f8ef transparent;
+    }
+    .tooltip-header {
+      background-color: #f4f8ef;
+      padding-top: 13px;
+      padding-bottom: 10px;
+      font-size: 14px;
+      text-align: center;
+      .green-text {
+        color: #90b866;
+        padding-left: 15px;
+      }
+      .green-text-bold {
+        color: #90b866;
+        font-weight: 900;
+      }
+    }
+    .tooltip-body {
+      padding: 13px 30px 15px 15px;
+      line-height: 16px;
+      font-size: 13px;
     }
   }
 }

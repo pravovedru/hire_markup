@@ -41,22 +41,59 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3" id="rating-container">
-                    <h1 class="left">7,5</h1>
-                    <p class="rating-title">Рейтинг Правовед.ru</p>
-                    <img src="images/rating.png" alt="rating"/>
+                    <div class="rating-header-1">
+                        <h1 id="raitnig-number" class="left">7,5</h1>
+                        <p class="rating-title">Рейтинг Правовед.ru</p>
+                        <img src="images/rating.png" alt="rating"/>
+                    </div>
+
+                    <div class="rating-header-2">
+                        <img class="left img-responsive" src="images/clock.png" alt="rating"/>
+                        <p>Недостаточно данных для расчета рейтинга</p>
+                    </div>
+
+                    <div id="tooltip">
+                        <div class="tooltip-header">
+                            <p><span class="green-text-bold">7,5 </span> из 10 <span class="green-text">23-е место в топе</span></p>
+                        </div>
+                        <div class="tooltip-body">
+                            <p>
+                                Рейтинг формируется на основе мнения клиентов, квалификации юриста и качества его консультаций.
+                            </p>
+                        </div>
+                    </div>
 
                     <button><a href="#">Обратиться к юристу</a></button>
                     <div class="reviews">
                         <a href="#">3268 отзывов </a> <p class="small-text"> от клиентов</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
-
+    <!-- jQuery -->
+    <script src="jQuery/jquery-3.1.1.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/js/bootstrap.js"></script>
+
+    <script>
+        $("#rating-container").click(function(){
+            $( ".rating-header-1" ).toggle();
+            $( ".rating-header-2" ).toggle();
+        });
+
+        $("#raitnig-number").mouseover(function(){
+            $("#tooltip").show();
+        });
+        $("#raitnig-number").mouseleave(function(){
+            $("#tooltip").hide();
+        });
+
+
+    </script>
+
     </body>
 </html>
 
