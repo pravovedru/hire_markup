@@ -1,0 +1,47 @@
+doctype html
+html
+    head(lang="en")
+        title Тестовое задание
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name="description" content="")
+        meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+        script(src="https://use.fontawesome.com/bcfad5d417.js")
+        link(rel="stylesheet" href="css/main.css")
+    body
+        main
+            .lawyer
+                .lawyer__photo
+                .lawyer__information
+                    .lawyer__name
+                        a(href='#') #{lawyer.name}
+                    .lawyer__wrapper.lawyer__wrapper-no-flex
+                        .lawyer__profile #{lawyer.profile},
+                        .lawyer__city
+                            a(href='#') #{lawyer.city}
+                        .lawyer__private-msg
+                            a(href='#') Личное сообщение
+                    .lawyer__description #{lawyer.description}
+                    .lawyer__wrapper
+                        .lawyer__specializations
+                            a(href='#') #{lawyer.specializations}
+                        .lawyer__years_of_experience #{lawyer.years_of_experience}
+                .lawyer__misc
+                    .lawyer__rating
+                        .lawyer__wrapper
+                            .lawyer__rating-count #{lawyer.rating}
+                            .lawyer__rating-progress
+                                .lawyer__rating-label
+                                    | Рейтинг Правовед.ру
+                                .lawyer__bullets
+                                    .lawyer__bullets-top
+                                    .lawyer__bullets-back
+                    .lawyer__feedback
+                        button.button.button-primary Обратиться к юристу
+                        .lawyer__reviews
+                            a(href='#') #{lawyer.reviews} отзывов
+                            span.lawyer__reviews-text от клиентов
+
+
+
+    script(src="js/scripts.min.js")

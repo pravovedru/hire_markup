@@ -1,0 +1,178 @@
+@import "helpers-mixins/normalize";
+@import "helpers-mixins/mixins";
+@import "modules/custom";
+@import "modules/bootstrap";
+@import "partials/buttons";
+
+body {
+  background-color: $grey-color;
+  padding: 25px;
+}
+
+a {
+  color: $blue-color;
+}
+
+.lawyer {
+  background-color: #ffffff;
+  display: flex;
+  margin: auto;
+  max-width: 960px;
+  padding: 25px;
+}
+
+.lawyer__photo {
+  background: url('../images/e13e9d20111e610c0dc11d94d522d89f_141_165.jpg') no-repeat center center;
+  background-size: cover;
+  min-width: 141px;
+}
+
+.lawyer__information {
+  padding: 0 25px;
+}
+
+.lawyer__name {
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.lawyer__wrapper {
+  @include flex();
+}
+
+.lawyer__profile {
+  color: $dark-grey-color;
+  font: $small-font-size;
+}
+
+.lawyer__city {
+  font: $small-font-size;
+}
+
+.lawyer__private-msg {
+  font: $small-font-size;
+}
+
+.lawyer__profile {
+  margin-right: 5px;
+}
+
+.lawyer__private-msg, .lawyer__years_of_experience {
+  margin-left: 20px;
+}
+
+.lawyer__description {
+  font: $normal-font-size;
+  margin: 13px 0;
+}
+
+.lawyer__specializations {
+  font: $small-font-size;
+}
+
+.lawyer__years_of_experience {
+  color: $dark-grey-color;
+  font: $small-font-size;
+}
+
+.lawyer__rating-count {
+  color: $green-color;
+  font: $big-label-font-size;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.lawyer__misc {
+  border-left: 1px solid $grey-color;
+  padding: 0 25px 0 45px;
+  @include flex-vertical();
+}
+
+.lawyer__rating-label {
+  font: $small-font-size;
+  white-space: nowrap;
+  margin-bottom: 6px;
+}
+
+.lawyer__bullets {
+  height: 7px;
+  width: 106px;
+  position: relative;
+  background-color: $grey-color;
+}
+
+.lawyer__bullets-back, .lawyer__bullets-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lawyer__bullets-top {
+  background: url("../images/white-filter-circle.png") no-repeat 0 0;
+  z-index: 2;
+}
+
+.lawyer__bullets-back {
+  background: $orange-color;
+  width: 45%;
+  z-index: 1;
+}
+
+.lawyer__reviews {
+  font: $small-font-size;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .lawyer {
+    display: block;
+    @include clearfix();
+  }
+
+  .lawyer__photo {
+    float: left;
+    width: 10%;
+    height: 80px;
+    margin: 0 20px 0px 0;
+  }
+
+  .lawyer__misc {
+    float: none;
+    padding: 20px 0 0 0;
+    margin-top: 20px;
+    border-left: none;
+    border-top: 1px solid $grey-color;
+  }
+
+  .lawyer__information {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .lawyer__photo {
+    float: none;
+    width: 10%;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .lawyer__wrapper-no-flex {
+    display: block;
+  }
+
+  .lawyer__private-msg {
+    margin: 0;
+  }
+
+  .lawyer__name{
+    text-align: center;
+  }
+
+}

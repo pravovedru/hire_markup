@@ -1,0 +1,12 @@
+# Folders to ignore
+.CVS
+.git
+.hg
+.idea
+.svn
+bower_components
+package-lock.json
+
+# Node.JS
+node_modules
+npm-debug.log

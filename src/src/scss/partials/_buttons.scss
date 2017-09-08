@@ -1,0 +1,16 @@
+.button{
+  cursor: pointer;
+  padding: 7px 20px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  font: $normal-font-size;
+}
+
+.button-primary{
+  border: 1px solid $green-gradient-to;
+  background: linear-gradient($green-gradient-from, $green-gradient-to);
+}
