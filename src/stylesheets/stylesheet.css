@@ -90,20 +90,114 @@ a:hover {
 }
 
 /* line 17, ../sass/stylesheet.scss */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* line 21, ../sass/stylesheet.scss */
 .container {
   background-color: #f6f6f6;
   padding: 20px 40px;
 }
-/* line 20, ../sass/stylesheet.scss */
+/* line 24, ../sass/stylesheet.scss */
 .container #card-container {
   background-color: #ffffff;
   padding: 25px 15px;
 }
-/* line 23, ../sass/stylesheet.scss */
+/* line 25, ../sass/stylesheet.scss */
+.container #card-container a {
+  color: #2a599a;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 28, ../sass/stylesheet.scss */
+.container #card-container a:hover {
+  color: #4271c7;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 35, ../sass/stylesheet.scss */
 .container #card-container .left-part {
   border-right: 1px solid #eaeaea;
+  padding-right: 95px;
 }
-/* line 25, ../sass/stylesheet.scss */
-.container #card-container .left-part .small-text {
+/* line 38, ../sass/stylesheet.scss */
+.container #card-container .left-part img {
+  padding-right: 20px;
+}
+/* line 41, ../sass/stylesheet.scss */
+.container #card-container .left-part .name {
+  font-size: 20px;
+}
+/* line 44, ../sass/stylesheet.scss */
+.container #card-container .left-part .descr {
+  font-size: 12px;
+  color: #888888;
+  padding-top: 15px;
+}
+/* line 48, ../sass/stylesheet.scss */
+.container #card-container .left-part .descr .small-text {
+  display: inline-block;
+}
+/* line 51, ../sass/stylesheet.scss */
+.container #card-container .left-part .descr a:last-child {
+  padding-left: 10px;
+}
+/* line 54, ../sass/stylesheet.scss */
+.container #card-container .left-part .descr p:last-child {
+  padding-left: 10px;
+}
+/* line 58, ../sass/stylesheet.scss */
+.container #card-container .left-part .about {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+/* line 68, ../sass/stylesheet.scss */
+.container #rating-container {
+  padding-left: 30px;
+}
+/* line 70, ../sass/stylesheet.scss */
+.container #rating-container h1 {
+  color: #90b866;
+  font-size: 32px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+/* line 76, ../sass/stylesheet.scss */
+.container #rating-container .rating-title {
+  font-size: 13px;
+}
+/* line 79, ../sass/stylesheet.scss */
+.container #rating-container button {
+  background: #94c461;
+  background: -webkit-linear-gradient(#94c461, #80b14c);
+  background: -o-linear-gradient(#94c461, #80b14c);
+  background: -moz-linear-gradient(#94c461, #80b14c);
+  background: linear-gradient(#94c461, #80b14c);
+  border: 1px solid #7fb04b;
+  padding: 15px 20px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+/* line 89, ../sass/stylesheet.scss */
+.container #rating-container button a {
+  color: #ffffff;
+}
+/* line 93, ../sass/stylesheet.scss */
+.container #rating-container .reviews {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #888888;
+}
+/* line 98, ../sass/stylesheet.scss */
+.container #rating-container .reviews .small-text {
   display: inline-block;
 }
