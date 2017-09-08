@@ -1,0 +1,31 @@
+@import "compass", "compass/reset", "media-queries", "compass/css3/border-radius", "compass/css3/transition";
+
+// -------------------------------------------------------------------------------------------------------------- GLOBAL
+.no-margin {margin: 0 !important}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+.left {float: left;}
+.right {float: right;}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+// ---------------------------------------------------------------------------------------------------------------------
+.container {
+  background-color: #f6f6f6;
+  padding: 20px 40px;
+  #card-container {
+    background-color: #ffffff;
+    padding: 25px 15px;
+    .left-part {
+      border-right: 1px solid #eaeaea;
+      .small-text {
+        display: inline-block;
+      }
+    }
+
+  }
+}
