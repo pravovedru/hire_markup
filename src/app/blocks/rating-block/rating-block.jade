@@ -1,0 +1,10 @@
+include ../dots/dots
+
+mixin rating-block(data)
+	+b.rating-block&attributes(attributes)
+		+e.num
+			| #{data}
+		+e.scale
+			+e.text
+				| Рейтинг Правовед.ru
+			+dots.__dots-line

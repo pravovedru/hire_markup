@@ -1,0 +1,9 @@
+mixin tooltip(rating, place)
+	+b.tooltip&attributes(attributes)
+		+e.header
+			+e.rating
+				| <span>#{rating}</span> из 10
+			+e.place
+				| #{place} место в топе
+		+e.body
+			| Рейтинг формируется на<br>основе мнения клиентов, квалификации юриста<br>и качества его консультаций.

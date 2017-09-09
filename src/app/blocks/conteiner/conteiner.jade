@@ -1,0 +1,44 @@
+include ../button/button
+include ../link/link
+include ../image/image
+include ../par/par
+include ../rating-block/rating-block
+include ../tooltip/tooltip
+
+mixin conteiner(data)
+	each item in data
+		+b.conteiner&attributes(attributes)
+			//- Avatar section
+			+e.avatar
+				+link(item.link)
+					+image(item.src, item.alt).conteiner__photo
+			//- Description section
+			+e.desc
+				//- Name link
+				+link(item.link).__name
+					| #{item.name}
+				//- profession
+				+e.prof 
+					| #{item.prof},
+					+link(item.link).__city
+						| г. #{item.city}
+					+link(item.link)
+						| личное сообщение
+				//- description
+				+par.__text
+					| #{item.text}
+				//- experience
+				+e.exp
+					+link(item.link).__spec
+						| #{item.spec}
+					| #{item.exp}
+			//- Ratio section
+			+e.rating
+				+rating-block(item.rat).__num
+				+tooltip(item.rat, item.place)
+				+button.__btn
+					| Обратиться к юристу
+				+e.feedback
+					+link(item.link)
+						| #{item.feed} отзывов
+					|  от клиентов
