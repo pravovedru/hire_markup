@@ -1,0 +1,121 @@
+body{
+    background-color: #F6F6F6;
+    font-family: Arial, sans-serif;
+    font-size: 1.1vw;
+    color: #000000;
+}
+ a{
+    text-decoration: none;
+    color: #2A599A;
+}
+.All{
+    width: 80%;
+    margin: 2vw auto;
+    background-color: #ffffff;
+
+}
+.Content{
+    padding: 2vw;
+    display: flex;
+}
+.Photo img{
+    width: 10.1vw;
+    height: 12vw;
+    max-width: 100%;
+    max-height: 100%;
+}
+.Info{
+    border-right: 1px solid #EAEAEA;
+    padding: 0vw  2vw;
+    padding-right: 7vw;
+    width: 43%;
+    
+}
+#InfoTop, #InfoBottom{
+    display:flex;
+    font-size: 0.95vw;
+}
+#Name{
+     font-size: 1.7vw;
+     color: #2A599A;
+}
+#lawyer, #exp{
+    color: #888888;
+}
+#city{
+    color: #2A599A;
+    margin-left: 0.4vw;
+    margin-right: 2vw;
+}
+#message{
+    color: #2A599A;
+}
+#InfoContent{
+    line-height: 1.7vw;
+    margin-bottom: 0.9vw;
+}
+#spec{
+color: #2A599A;
+margin-right: 2vw;
+}
+
+.Rating{
+    margin: 0vw auto;
+}
+#TopRating{
+    display: flex;
+}
+#count{
+    color: #AAC78C;
+    font-weight: 600;
+    font-size: 2.7vw;
+    padding: 0vw 1vw;
+}
+#title{
+    font-size: 0.9vw;
+}
+#Button{
+    
+    text-align: center;
+    padding-top: 3.2vw;
+}
+#Button input[type=button]{
+    width: 13vw;
+    height: 3vw;
+    background: linear-gradient(to top,#7FB04B, #94C461);
+    border: 1px solid #7FB04B;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1vw;
+}
+#review{
+    padding-top: 1vw;
+}
+#who, #how{
+    font-size: 1vw;
+}
+#how{
+    color: #3C69AB;
+}
+#who{
+    color: #999999;
+}
+.RatingFinal{
+    margin-top: 0.3vw;
+    direction: rtl;
+}
+.RatingFinal span{
+   padding-right: 0.05vw;
+   font-size: 1.7vw;
+   display: inline-block;
+  position: relative;
+  width: 1vw;
+}
+
+.RatingFinal > span:hover:before,
+.RatingFinal > span:hover ~ span:before {
+   content: url("orange.png");
+   position: absolute;
+   top: 0.3vw;
+   left: 0.4vw;
+}
