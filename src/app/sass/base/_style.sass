@@ -1,0 +1,208 @@
+body
+	background-color: $color-body
+	color: $color-extra
+	font-size: $font-size-global
+	font-family: Arial, sans-serif
+	font-weight: 300
+
+::selection
+	background-color: $color-other
+	color: $color-global
+
+.container
+	width: 960px
+	margin: 0 auto
+
+.link
+	transition: color 0.2s ease-in-out
+	&-reference
+		color: $color-theme
+		&:hover
+			color: $color-other
+
+.button
+	display: inline-block
+	padding: 12px 25px
+	border-radius: 5px
+	border: 1px solid darken($color-other, 10)
+	background: linear-gradient(to bottom, rgba(148,197,98,1) 0%, rgba(128,177,76,1) 100%)
+	color: $color-global
+	font-size: $font-size-global - 1
+	&:hover
+		background: linear-gradient(to bottom, #a6d277 0%, #97c765 100%)
+	&:focus
+		background: #8cbc58
+
+.rating
+	display: flex
+	&-item
+		width: 7px
+		height: 7px
+		margin: 0 4px 0 0
+		border-radius: 100%
+		background-color: #e3e3e3
+		position: relative
+		overflow: hidden
+		&:last-child
+			margin: 0
+		&.full
+			background-color: #e7b567
+		&.half:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 50%
+			height: 100%
+			background-color: #e7b567
+
+.lawyers
+	padding: 100px 0
+
+.lawyer	
+	&-card
+		display: flex
+		justify-content: space-between
+		margin: 0 0 40px
+		padding: 25px
+		background-color: $color-global
+		&:last-child
+			margin: 0
+		&__processed
+			.lawyer-rating
+				display: none
+				&__not
+					display: flex
+		&__list
+			display: flex
+			&_item
+				margin: 0 18px 0 0
+				color: lighten($color-extra, 40)
+				font-size: $font-size-global - 1
+				&:last-child
+					margin: 0
+			&_link
+				color: $color-theme__dark
+				transition: color 0.2s ease-in-out
+				&:hover
+					color: $color-other
+			&:nth-of-type(1)
+				.lawyer-card__list_item:first-child
+					margin: 0 7px 0 0
+			&:nth-of-type(2)
+				.lawyer-card__list_item
+					margin: 0 17px 0 0
+	&-img
+		min-width: 141px
+		img
+			width: 100%
+	&-info
+		width: 480px
+		margin: 0 30px 0 25px
+		padding: 0 50px 0 0
+	&-name
+		display: block
+		max-width: 350px
+		margin: 0 0 16px
+		overflow: hidden
+		color: $color-theme__dark
+		font-size: $font-size-extra
+		line-height: 20px
+		text-overflow: ellipsis
+		white-space: nowrap
+		transition: color 0.2s ease-in-out
+		&:hover
+			color: $color-other
+	&-text
+		margin: 15px 0 19px 0
+		line-height: 22px
+	&-panel
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 260px
+		padding: 0 0 0 42px
+		border-left: 1px solid darken($color-body, 5)
+		&__box
+			margin: 0 0 0 5px
+	&-rating
+		display: flex
+		padding: 0 0 7px
+		&:hover
+			.lawyer-tooltip
+				opacity: 1
+				visibility: visible
+				transform: scale(1)
+		&__rate
+			margin: 0 14px 0 0
+			color: $color-other
+			font-size: $font-size-extra + 12
+			font-weight: 700
+		&__title
+			display: block
+			margin: 2px 0 7px
+		&__not
+			display: none
+			align-items: center
+			padding: 0 0 0 50px
+			position: relative
+			color: lighten($color-extra, 40)
+			font-size: $font-size-global - 1
+			line-height: 20px
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 0
+				width: 36px
+				height: 36px
+				margin-top: -18px
+				background: url("../assets/rating.png") no-repeat
+	&-reviews
+		margin: 15px 0 0 13px
+		color: lighten($color-extra, 40)
+		font-size: $font-size-global - 1
+	&-tooltip
+		position: absolute
+		top: 100%
+		left: 50%
+		width: 225px
+		margin: 7px 0 0 -112.5px
+		border-radius: 5px
+		border: 1px solid darken($color-body, 5)
+		background-color: $color-global
+		opacity: 0
+		visibility: hidden
+		transform: scale(0.8)
+		transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			left: 50%
+			margin-left: -6px
+			border: 6px solid transparent
+		&:before
+			top: -13px
+			border-bottom: 6px solid darken($color-body, 5)
+		&:after
+			top: -12px
+			border-bottom-color: lighten($color-other, 38)
+		&__wrapper
+			position: relative
+		&__head
+			display: flex
+			justify-content: space-between
+			padding: 10px 15px
+			background-color: lighten($color-other, 38)
+		&__rate
+			&_current
+				color: $color-other
+				font-weight: 700
+		&__rank
+			color: $color-other
+		&__text
+			font-size: $font-size-global - 1
+			line-height: 17px
+		&__body
+			padding: 15px
