@@ -1,0 +1,50 @@
+//- lawyer
+mixin lawyer-card(style, img, name, position, city, text, work, years, rating, reviews)
+	div(class="lawyer-card lawyer-card__" +style)
+		a(href="").lawyer-img
+			img(src="" +img, alt="")
+		.lawyer-info		
+			a(href="").lawyer-name= name
+			ul.lawyer-card__list
+				li.lawyer-card__list_item= position
+				li.lawyer-card__list_item
+					a(href="").lawyer-card__list_link= city
+				li.lawyer-card__list_item
+					a(href="").lawyer-card__list_link личное сообщение
+			p.lawyer-text= text
+			ul.lawyer-card__list
+				li.lawyer-card__list_item
+					a(href="").lawyer-card__list_link= work
+				li.lawyer-card__list_item= years
+		.lawyer-panel
+			.lawyer-rating
+				.lawyer-tooltip__wrapper
+					span.lawyer-rating__rate= rating
+					.lawyer-tooltip
+						.lawyer-tooltip__head
+							span.lawyer-tooltip__rate 
+								span.lawyer-tooltip__rate_current 7,5 
+								| из 10
+							span.lawyer-tooltip__rank 2-е место в топе
+						.lawyer-tooltip__body
+							p.lawyer-tooltip__text Рейтинг формируется на основе мнения клиентов, квалификации юриста и качества его консультаций.
+				div
+					span.lawyer-rating__title Рейтинг Правоед.ru
+					ul.rating
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.full
+						li.rating-item.half
+			.lawyer-rating__not Недостаточно данных#[br]для расчета рейтинга
+			.lawyer-panel__box
+				a(href="").button Обратиться к юристу
+				.lawyer-reviews
+					a(href="").link.link-reference= reviews
+					|  отзывов 
+					span от клиентов

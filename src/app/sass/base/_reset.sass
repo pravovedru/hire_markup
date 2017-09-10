@@ -1,0 +1,58 @@
+@import "base/_variables"
+
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	vertical-align: baseline
+	font-family: inherit
+	font-style: inherit
+	font-size: 100%
+	border: none
+	outline: none
+
+body
+	line-height: 1
+	text-size-adjust: 100%
+
+html, body
+	height: 100%
+	font-size: 100%
+
+ul, li
+	list-style: none
+
+sup
+	font-size: smaller
+	vertical-align: super
+
+img
+	vertical-align: bottom
+
+a
+	text-decoration: none
+	&:hover,
+	&:focus
+		text-decoration: none
+		outline: none
+
+input
+	-webkit-appearance: none
+	&::ms-clear
+		display: none
+	&[type="submit"]
+		cursor: pointer
+	&[type="number"]
+		-moz-appearance: textfield
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button
+		-webkit-appearance: none
+		margin: 0
+
+textarea
+	overflow: hidden
+
+button
+	cursor: pointer
