@@ -1,0 +1,274 @@
+/*Sass-includes*/
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin margin-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+
+/* End of Sass-includes*/
+
+
+
+.section {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -480px;
+	width: 960px;
+	@include clearfix;
+}
+
+.card {
+	width: 65.80259222333001%; // 631px / 9.60px
+	float: left;
+	@include clearfix;
+}
+
+.card-photo {
+	float: left;
+	width: 21.36363636363636%; // 135px / 6.31px
+}
+
+.card-content {
+	position: relative;
+	height: 165px;
+	float: left;
+	width: 64.84848484848485%; // 447px / 6.31px
+	margin-left: 25px;
+}
+
+.lawer-name {
+	margin: 0;
+    padding-bottom: 12px;
+	font-size: 24px;
+	line-height: 20px;
+	font-family: Arial, sans-serif;
+	color: #2a599a;
+}
+
+.position {
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	color: #888;
+
+}
+
+.city {
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	color: #2a599a;
+}
+
+.send-message-link {
+	margin-left: 18px;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+	color: #2a599a;
+	text-decoration: none;
+	
+}
+
+.lawer-description {
+    margin: 15px 0 0 0;
+	font-size: 14px;
+	line-height: 22px;
+	font-family: Arial, sans-serif;
+	color: #000;
+}
+
+.lawer-card-footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px 0 0 0;
+}
+
+.specializations {
+	margin: 18px 15px 0 0;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+    color: #244f8a;
+}
+
+.experience {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #888;
+}
+
+.card-aside {
+    padding-left: 55px;    
+    border-left: 1px solid rgba(136, 136, 136, 0.11);
+    width: 27.300971%;
+	float: right;
+}
+
+.rating {
+	@include clearfix;
+	position: relative;
+	float: none;
+}
+
+.rating-number {
+	float: left;
+    margin-right: 13px;
+	font-size: 36px;
+	line-height: 36px;
+	font-family: Arial, sans-serif;
+	color: #90b866;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.rating-ui {
+	float: left;
+    margin: 0;
+}
+
+.rating-ui-title {
+	margin: 0;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+.rating-container.theme-krajee-svg.rating-md.rating-animate {
+    position: relative;
+    top: -30px;
+    left: -7px;
+}
+
+.popup.show {
+	display: block;
+}
+
+.popup {
+	display: none;
+	position: absolute;    
+	top: 48px;
+    left: -103px;
+	width: 255px;
+	height: 149px;
+	border-radius: 3px;
+    border: 1px solid #cddec6;
+
+}
+
+
+.popup:after,
+.popup:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.popup:after {
+    border-width: 10px;
+    top: -12px;
+    transform: rotate(270deg);
+    left: 50%;
+    border-color: transparent transparent transparent #f4f8ef;
+    border-width: 6px;
+    margin-left: -4px;
+}
+
+.popup:before {
+    border-width: 11px;
+    top: -14px;
+    transform: rotate(270deg);
+    left: 50%;
+    margin-left: -5px;
+    border-color: transparent transparent transparent #fdd;
+    border-width: 7px;
+}
+
+.popup-title {
+    padding: 11px 14px;
+    font-size: 13px;
+    font-family: Arial,sans-serif;
+    line-height: 16px;
+    color: #333;
+    background-color: #f4f8ef;
+}
+
+.popup-title-rating {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.popup-title-rating-current {
+	color: #90b866;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+}
+
+.popup-title-rank {
+	display: inline-block;
+    vertical-align: top;
+    color: #79a847;
+    float: right;
+    padding-left: 10px;
+}
+
+.popup-content {
+	padding: 14px;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+
+.get-help {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-weight: 400!important;
+	background-color: #7eaf4a!important;
+    border: 1px solid #7fb04b!important;
+    border-radius: 3px;
+    color: #fff!important;
+    background: linear-gradient(to bottom,#97c765 0%,#7eaf4a 100%);
+    min-width: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feedbacks {
+    margin: 6px 0 14px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 19px;
+	color: #888;
+}
+
+.feedbacks-hilighted {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	color: #3c69ab;
+}
