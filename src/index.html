@@ -1,1 +1,100 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lawer-card</title>
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="libs/bootstrap-rating-system/star-rating.min.css">
+	<link rel="stylesheet" href="libs/bootstrap-rating-system/theme.min.css">
+	<link rel="stylesheet" href="style/style.css">
+<body>
+	<section class="section">
+		<section class="card">
+			<img src="http://via.placeholder.com/141x165" alt="Lawer Photo" class="card-photo">
+			<div class="card-content">
+				<h2 class="lawer-name">Мирасов Эдуард</h2>
+				<div class="lawer-details"><span class="position">юрист, </span><span class="city">г. Самара</span><a href="#" class="send-message-link">личное сообщение</a></div>
+				<p class="lawer-description">
+					С 2009 по 2013 работал в должности следователя в ОВД. С января 2013 по сентябрь 2013 работал в лизинговой компании. С сентября 2013 по настоящее время работаю в...
+				</p>
+				<div class="lawer-card-footer">
+					<span class="specializations">5 специализаций</span><span class="experience">8 лет стажа</span>
+				</div>
+			</div>
+		</section>
+		<section class="card-aside">
+			<div class="rating">
+				<span class="rating-number">7,5</span>
+				<div class="rating-ui">
+					<p class="rating-ui-title">Рейтинг Правовед.ru</p>
+					<div class="rating-ui-bullets"></div>
+				</div>
+				<div class="popup">
+					<div class="popup-title">
+						<div class="popup-title-rating"><span class="popup-title-rating-current">7,5</span> из 10</div>
+						<div class="popup-title-rank"><span class="popup-title-rank-current">23</span>-е место в топе</div>
+					</div>
+					<div class="popup-content">Рейтинг формируется на основе мнения клиентов, квалификации юриста и качества 	его консультаций.
+					</div>
+				</div>
+			</div>
+			<button class="get-help">
+				Обратиться к юристу
+			</button>
+			<p class="feedbacks"><span class="feedbacks-hilighted">3268 отзывов</span> от клиентов</p>
+		</section>
+	</section>
+	<script src="js/jquery.min.js"></script></head>
+	<script src="libs/bootstrap-rating-system/star-rating.min.js"></script>
+	<script src="libs/bootstrap-rating-system/theme.min.js"></script>
+	<script src="libs/bootstrap-rating-system/ru.js"></script>
+	<script>
+		$(document).ready(function() {
+
+
+			$('.rating-ui-bullets').rating(
+				{
+					theme: 'krajee-svg',
+					language: 'ru',
+					emptyStar: '<img src="img/bullet-empty.png">',
+					filledStar: '<img src="img/bullet-filled.png">',
+					stars: 10,
+					max: 10,
+					showCaption: false,
+
+				}
+			);
+
+
+
+			// $('.rating-number').on('hover', function(e) {
+
+			// 	e.preventDefault();
+
+			// 	var currentModal = $('.popup');
+
+			// 	$(currentModal).fadeIn(200);
+
+			// });
+
+
+			// $('.rating-number').on('mouseover', function() {
+				
+			// 	$('.popup').fadeOut(600);// Скрыть всплывающее окно
+			
+			// });// При клике на маску
+
+
+			$( ".rating-number" ).hover(
+			  function() {
+			    $( '.popup' ).addClass( "show" );
+			  }, function() {
+			    $( '.popup' ).removeClass( "show" );
+			  }
+			);
+
+
+		});
+	</script>
+</body>
+</html>
