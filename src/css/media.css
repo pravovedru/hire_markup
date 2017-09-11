@@ -1,0 +1,16 @@
+@media screen and (max-width: 900px) {
+    .flank-block {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 778px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .description, .flank-block {
+        min-width: 300px;
+    }
+}
