@@ -30,6 +30,7 @@
     width: 490px;
     padding-right: 70px;
     position: relative;
+    min-height: 165px;
     border-right: 1px solid #eaeaea;
 }
 
@@ -38,8 +39,7 @@
     font-size: 24px;
     line-height: 20px;
     padding: 0;
-    margin: 0;
-    margin-bottom: 17px;
+    margin: 0 0 16px 0;
 }
 
 .person-info__what-where,
@@ -62,9 +62,12 @@
 }
 
 .person-info__experience {
-    line-height: 20px;
+    line-height: 15px;
     font-size: 13px;
     margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .person-info__experience a {
@@ -77,6 +80,7 @@
     top: 25px;
     right: 25px;
     width: 215px;
+    min-height: 50px;
 }
 
 .person-rating__value {
@@ -93,25 +97,25 @@
 .person-rating__title {
     display: block;
     font-size: 13px;
-    color: #888;
+    color: #333;
     line-height: 20px;
-    margin: 0 0 5px 70px;
+    margin: 0 0 5px 67px;
 }
 
 .person-rating__none {
     display: block;
     font-size: 13px;
     color: #888;
-    line-height: 20px;
-    padding-left: 70px;
+    line-height: 18px;
+    padding-left: 67px;
     background: no-repeat 15px center url(images/no-rating.png);
     background-size: 36px 36px;
 }
 
 .graph {
     display: block;
-    margin-left: 70px;
-    width: 117px;
+    margin-left: 67px;
+    width: 106px;
     height: 7px;
     position: relative;
 }
@@ -142,12 +146,16 @@
     display: block;
     position: absolute;
     bottom: 25px;
-    right: 25px;
+    right: 35px;
     width: 215px;
     text-align: center;
     font-size: 13px;
 }
 
+.person-rating__order {
+    color: #888;
+}
+
 .person-message button {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }

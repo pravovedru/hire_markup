@@ -17,7 +17,7 @@ $(document).ready(function () {
             .text($value.data('place'));
 
         $tooltip.css({
-            top: $value.offset().top + parseFloat($elt.height()) + 10,
+            top: $value.offset().top + parseFloat($elt.height()),
             left: $value.offset().left  - 80
         });
 
@@ -48,5 +48,4 @@ $(document).ready(function () {
             $tooltip.removeClass('show');
         }, 100);
     });
-
 });

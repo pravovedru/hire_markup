@@ -15,23 +15,23 @@ module.exports = function (grunt) {
                 src: [
                     "bower_components/jquery/dist/jquery.js"
                 ],
-                dest: './src/build/libs.js'
+                dest: './public_html/build/libs.js'
             },
             app: {
                 src: [
                     "./src/js/js.js"
                 ],
-                dest: './src/build/js.js'
+                dest: './public_html/build/js.js'
             }
         },
         uglify: {
             libs: {
-                src: './src/build/libs.js',
-                dest: './src/build/libs.min.js'
+                src: './public_html/build/libs.js',
+                dest: './public_html/build/libs.min.js'
             },
             app: {
-                src: './src/build/js.js',
-                dest: './src/build/js.min.js'
+                src: './public_html/build/js.js',
+                dest: './public_html/build/js.min.js'
             }
         },
         concat_css: {
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 src: [
                     "./node_modules/normalize.css/normalize.css"
                 ],
-                dest: './src/build/libs.css'
+                dest: './public_html/build/libs.css'
             },
             app: {
                 src: [
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                     "./src/css/person.css",
                     "./src/css/tooltip.css"
                 ],
-                dest: "./src/build/css.css"
+                dest: "./public_html/build/css.css"
             }
         },
         imagemin: {
@@ -63,7 +63,7 @@ module.exports = function (grunt) {
         'string-replace': {
             prod: {
                 files: {
-                    'src/build/': './src/build/css.css'
+                    'public_html/build/': './public_html/build/css.css'
                 },
                 options: {
                     replacements: [{
@@ -75,8 +75,8 @@ module.exports = function (grunt) {
         },
         dataUri: {
             prod: {
-                src: ['./src/build/css.css'],
-                dest: './src/build/',
+                src: ['./public_html/build/css.css'],
+                dest: './public_html/build/',
                 options: {
                     target: [
                         './src/css/images-build/**/*.*'
@@ -89,8 +89,8 @@ module.exports = function (grunt) {
         cssmin: {
             target: {
                 files: [{
-                    './src/build/css.min.css': ['./src/build/css.css'],
-                    './src/build/libs.min.css': ['./src/build/libs.css']
+                    './public_html/build/css.min.css': ['./public_html/build/css.css'],
+                    './public_html/build/libs.min.css': ['./public_html/build/libs.css']
                 }]
             }
         }
