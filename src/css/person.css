@@ -1,0 +1,161 @@
+.person {
+    position: relative;
+    display: block;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 960px;
+    margin-bottom: 20px;
+}
+
+.person:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.person-avatar {
+    display: block;
+    width: 141px;
+    height: 165px;
+    float: left;
+    background: no-repeat center center url(images/no-avatar.png);
+    background-size: contain;
+}
+
+.person-info {
+    box-sizing: border-box;
+    float: left;
+    margin-left: 25px;
+    width: 490px;
+    padding-right: 70px;
+    position: relative;
+    min-height: 165px;
+    border-right: 1px solid #eaeaea;
+}
+
+.person-info>a:first-child {
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+.person-info__what-where,
+.person-info__experience {
+    color: #888;
+    font-size: 13px;
+    margin: 0 0 17px 0;
+}
+
+.person-info__what-where .message {
+    margin-left: 20px;
+}
+
+.person-info__biograph {
+    color: #000;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0 0 17px 0;
+    padding: 0;
+}
+
+.person-info__experience {
+    line-height: 15px;
+    font-size: 13px;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.person-info__experience a {
+    margin-right: 15px;
+}
+
+.person-rating {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 215px;
+    min-height: 50px;
+}
+
+.person-rating__value {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: #90b866;
+    line-height: 36px;
+    float: left;
+    width: 60px;
+    text-align: center;
+}
+
+.person-rating__title {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    line-height: 20px;
+    margin: 0 0 5px 67px;
+}
+
+.person-rating__none {
+    display: block;
+    font-size: 13px;
+    color: #888;
+    line-height: 18px;
+    padding-left: 67px;
+    background: no-repeat 15px center url(images/no-rating.png);
+    background-size: 36px 36px;
+}
+
+.graph {
+    display: block;
+    margin-left: 67px;
+    width: 106px;
+    height: 7px;
+    position: relative;
+}
+
+.graph__background {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 7px;
+    background: repeat-x left top url(images/rating-background.png);
+    background-size: contain;
+    z-index: 1;
+}
+
+.graph__foreground {
+    position: absolute;
+    z-index: 2;
+    top:0;
+    left:0;
+    width: auto;
+    height: 7px;
+    background: repeat-x left top url(images/rating-foreground.png);
+    background-size: contain;
+}
+
+.person-message {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    width: 215px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.person-rating__order {
+    color: #888;
+}
+
+.person-message button {
+    margin-bottom: 18px;
+}

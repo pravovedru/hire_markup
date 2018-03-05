@@ -1,0 +1,37 @@
+{
+  "name": "hire_markup",
+  "version": "1.0.0",
+  "description": "> Вакансия: https://spb.hh.ru/vacancy/22603725",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamakca/hire_markup.git"
+  },
+  "author": "Maxim N. Belousov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamakca/hire_markup/issues"
+  },
+  "homepage": "https://github.com/yamakca/hire_markup#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "grunt": "^1.0.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-img-2-data-uri": "^0.2.1",
+    "grunt-data-uri": "^0.3.0",
+    "grunt-string-replace": "^1.3.1",
+    "mime": "~1.2.9"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
