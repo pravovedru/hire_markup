@@ -1,0 +1,177 @@
+body{
+    background-color: #f6f6f6;
+}
+.user-card{
+    background-color: white;
+    width: 910px;
+    height: 165px;
+    margin: auto;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+.user-card::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.user-card a{
+    text-decoration: none;
+}
+.user-card a:visited{
+    color: #2a59b3;
+}
+.user-card__photo{
+    height: 165px;
+    width: 141px;
+    margin-right: 25px;
+}
+.user-card__info, 
+.user-card__photo, 
+.user-card__dop_info{
+    float: left;
+    height: 100%;
+}
+.user-card__info{
+    width: 490px;
+}
+.user-card__name{
+    font-size: 24px;
+    line-height: 20px;
+}
+.user-card__city_and_message span,
+.user-card__reviews span,
+.user-card__experience span
+{
+    color: #888888;
+}
+.user-card__city_and_message{
+    margin-top: 15px;
+}
+.user-card__message{
+    margin-left: 20px;
+}
+.user-card__bio{
+    width: 400px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 66px;
+}
+.user-card__experience{
+    margin-top: 20px;
+}
+.user-card__experience span{
+    margin-left: 20px;
+}
+.user-card__dop_info{
+    border-left: 1px solid rgb(234, 233, 233);
+    padding-left: 43px;
+    width: 200px;
+    position: relative;
+}
+.user-card__rating{
+    margin-bottom: 52px;
+    cursor: pointer;
+    height: 45px;
+}
+.user-card__rating-info{
+    position: absolute;
+    width: 225px;
+    height: 130px;
+    border: 1px solid #cfd3cb;
+    border-radius: 5px;
+    background: white;
+    top: 45px;
+    left: -42px;
+    display: none;
+
+}
+.user-card__rating:hover + .user-card__rating-info, .user-card__rating-info:hover{
+    display: block;
+}
+.rating-info__header{
+    background-color: #f4f8ef;
+    width: 195px;
+    height: 20px;
+    padding: 10px 15px 10px 15px;
+}
+.rating-info__header>span:first-child{
+    float: left;
+}
+.rating-info__header em{
+    color: #90b866;
+    font-style: normal;
+}
+.user-card__rating-info p{
+    padding: 0 20px 0 12px;
+}
+.rating-info__header>span:last-of-type{
+    float: right;
+    color: #90b866;
+}
+.user-card__rating-info::before{
+    content: '';
+    position: absolute;
+    background-color: #f4f8ef;
+    left: 101px;
+    border: 1px solid #cfd3cb;
+    border-bottom: none;
+    border-right: none;
+    bottom: 125px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+.user-card__rating>div{
+    display: flex;
+    flex-direction: column;
+}
+.user-card__rating_number{
+    color: #90b866;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    float: left;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+.user-card__rating_title{
+    margin: 3px 0 5px 0;
+}
+.user-card__rating_points{
+    width: 106px;
+    height: 7px;
+    margin-top: 2px;
+    display: block;
+    background-image: 
+        url("img/rating.png"),
+        linear-gradient(to right, #e7b567 0%, #e7b567 75%, #e3e3e3 75%);
+}
+
+.user-card__button{
+    background-image: linear-gradient(to top, #7fb04b 0%, #97c765 100%);
+    border-radius: 4px;
+    border-color: #7fb04b;
+    margin-left: 5px;
+    padding: 12px 0px 8px 22px;
+    width: 158px;
+    height: 18px;
+    cursor: pointer;
+}
+.user-card__button a{
+    font-size: 14px;
+}
+.user-card__button a:visited{
+    color: white;
+}
+.user-card__reviews{
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
