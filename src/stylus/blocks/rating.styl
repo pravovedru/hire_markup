@@ -1,0 +1,32 @@
+.rating
+    display flex
+    cursor pointer
+    position relative
+    &:hover
+        .tooltip
+            visibility visible
+            opacity 1
+    &__text
+        font-size 13px
+        margin 0 0 7px 0
+        display block
+    &__value
+        font-size 36px
+        color #90b866
+        font-weight bold
+        margin -1px 10px 0 0
+        line-height 33px
+    &__missing
+        font-size 13px
+        color #888888
+        display flex
+        align-items center
+        width 190px
+        &:before
+            content ""
+            display inline-block
+            width 40px
+            height 40px
+            background url("/img/clock.png") no-repeat center
+            flex-shrink 0
+            margin 0 15px 0 0

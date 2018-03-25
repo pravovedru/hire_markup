@@ -1,0 +1,45 @@
+.tooltip
+    border 1px solid #d5d5d5
+    border-radius 4px
+    width 225px
+    position absolute
+    background #ffffff
+    top 140%
+    left -88px
+    opacity 0
+    visibility hidden
+    transition all .3s
+    &:before
+    &:after
+        content ""
+        display block
+        position absolute
+        width 0px
+        left 0
+        right 0
+        margin auto
+    &:before
+        border 6px solid transparent
+        border-bottom 6px solid #f4f8ef
+        top -12px
+        z-index 1
+    &:after
+        border 8px solid transparent
+        border-bottom 8px solid #d5d5d5
+        top -16px
+    &__text
+        color #333333
+        font-size 13px
+        line-height 16px
+    &__header
+        background #f4f8ef
+        border-radius 4px 4px 0 0
+        padding 12px 15px
+        display flex
+        justify-content space-between
+        align-items baseline
+    &__body
+        padding 12px 15px
+    &__current-rating
+        font-size 14px
+        font-weight bold
